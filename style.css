@@ -4,5 +4,15 @@
     text-align: center;
 }
 .column{
+<<<<<<< HEAD
     text-align: center;
+=======
+    text-align: center;    
+}
+
+.box{
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 500px;
+>>>>>>> a9a31f3c57438d9218799ea520191a73613d2847
 }
