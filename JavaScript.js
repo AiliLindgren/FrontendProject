@@ -10,3 +10,7 @@ function changeAmount(operator){
 
     document.getElementById("amount").innerText = amount // Fråga Oscar om innerText.
 }
+
+// function changePicture(like){
+    // if (like) {}
+//}
