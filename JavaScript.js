@@ -8,5 +8,5 @@ function changeAmount(operator){
         amount++
     }
 
-    document.getElementById("amount").innerText = amount
+    document.getElementById("amount").innerText = amount // Fråga Oscar om innerText.
 }
