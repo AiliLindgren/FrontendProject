@@ -25,17 +25,19 @@ function changePicture() {
 
 let amount2 = 0;
 let newPrice = 0;
-let priceKetchup = 30;
+// let itemPrice = 30;
 
-function changeAmount2(operator) {
+function changeAmount2(operator, inputPrice) {
+    let itemPrice = parseFloat(inputPrice)
     if (operator === '+') {
         amount2++
-        newPrice += priceKetchup
+        newPrice += itemPrice
     }
     if (operator === '-' && amount2 > 0) {
         amount2--
-        newPrice -= priceKetchup
+        newPrice -= itemPrice
     }
     document.getElementById("amount2").innerText = amount2
     document.getElementById("price").innerText = newPrice
+    
 }
