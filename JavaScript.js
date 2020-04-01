@@ -23,21 +23,25 @@ function changePicture() {
     }
 }
 
-let amount2 = 0;
-let newPrice = 0;
+// let amount2 = 0; 
+// let newPrice = 0;
 // let itemPrice = 30;
 
-function changeAmount2(operator, inputPrice) {
+function changeAmount2(operator, inputPrice, idAmount, idPrice) {
     let itemPrice = parseFloat(inputPrice)
+    let amountB = parseFloat(document.getElementById(idAmount).innerText)
+    let newPrice = parseFloat(document.getElementById(idPrice).innerText)
+
     if (operator === '+') {
-        amount2++
+        amountB++
         newPrice += itemPrice
     }
-    if (operator === '-' && amount2 > 0) {
-        amount2--
+    if (operator === '-' && amountB > 0) {
+        amountB--
         newPrice -= itemPrice
     }
-    document.getElementById("amount2").innerText = amount2
-    document.getElementById("price").innerText = newPrice
+    document.getElementById(idAmount).innerText = amountB
+    // document.getElementById(id).innerText = amount3
+    document.getElementById(idPrice).innerText = newPrice
     
 }
