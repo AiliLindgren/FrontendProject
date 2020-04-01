@@ -35,14 +35,14 @@
     <!-- // Här jobbar Aili -->
     <div class="box">
         <!-- <div class="row2"> -->
-            <span class="small-image"><img src="Ketchup.jpg"></span>
-            <span>Ketchup:</span>
-            <span id="ketchupPrice">25</span>
-            <span>kr</span>
-            <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup','totalAmount')">-</button>
-            <span id="amount2">0</span>
-            <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup', 'totalAmount')">+</button>
-            <span id="sumPriceKetchup">0 </span> <span>kr</span>
+        <span class="small-image"><img src="Ketchup.jpg"></span>
+        <span>Ketchup:</span>
+        <span id="ketchupPrice">25</span>
+        <span>kr</span>
+        <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup','totalAmount')">-</button>
+        <span id="amount2">0</span>
+        <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup', 'totalAmount')">+</button>
+        <span id="sumPriceKetchup">0 </span> <span>kr</span>
         <!-- </div> -->
         <br>
         <div>
@@ -67,32 +67,37 @@
             <span id="sumPriceSoap">0</span> <span>kr</span>
         </div>
         <br>
-            <span>Total amount to pay:</span>
-            <span id="totalAmount">0</span>
-            <span>kr</span>
+        <span>Total amount to pay:</span>
+        <span id="totalAmount">0</span>
+        <span>kr</span>
     </div>
 
     <h1 class="divider">Travel </h1>
-    
-    <select id="fromCity">
-        <option value="1">Stockholm C</option>
-        <option value="2">Göteborg C</option>
-        <option value="3">Malmö C</option>
-        <option value="4">Linköping C</option>
-        <option value="5">Åre C</option>
-    </select>
+    <div class="box">
+        <br>
+        <select id="fromCity">
+            <option value="1">Stockholm C</option>
+            <option value="2">Göteborg C</option>
+            <option value="3">Malmö C</option>
+            <option value="4">Linköping C</option>
+            <option value="5">Åre C</option>
+        </select>
 
-    <button onclick="swap()"></button>
+        <button onclick="swap()">"  "</button>
 
-    <select id="toCity">
-        <option value="1">Stockholm C</option>
-        <option value="2">Göteborg C</option>
-        <option value="3">Malmö C</option>
-        <option value="4">Linköping C</option>
-        <option value="5">Åre C</option>
-    </select>
+        <select id="toCity">
+            <option value="1">Stockholm C</option>
+            <option value="2">Göteborg C</option>
+            <option value="3">Malmö C</option>
+            <option value="4">Linköping C</option>
+            <option value="5">Åre C</option>
+        </select>
 
-    <button>Sök resa</button>
+        <button>Sök resa</button>
+        <br>
+        <br>
+        <br>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
