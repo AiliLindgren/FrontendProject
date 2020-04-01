@@ -45,6 +45,16 @@ function changeAmount2(operator, inputPrice, amount, sumPrice, totalAmount) {
     }
     document.getElementById(amount).innerText = amountB
     document.getElementById(sumPrice).innerText = newPrice
-    document.getElementById(totalAmount).innerText = newPriceTotal
-    
+    document.getElementById(totalAmount).innerText = newPriceTotal    
+}
+
+function swap(){
+    // let temp = document.getElementById("fromCity").innerHTML;
+    // document.getElementById("fromCity").innerHTML = document.getElementById("toCity").innerHTML
+    // document.getElementById("toCity").innerHTML = temp
+
+    let temp = document.getElementById("fromCity").value;
+    document.getElementById("fromCity").value = document.getElementById("toCity").value
+    document.getElementById("toCity").value = temp
+
 }
