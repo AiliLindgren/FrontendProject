@@ -27,21 +27,24 @@ function changePicture() {
 // let newPrice = 0;
 // let itemPrice = 30;
 
-function changeAmount2(operator, inputPrice, idAmount, idPrice) {
+function changeAmount2(operator, inputPrice, amount, sumPrice, totalAmount) {
     let itemPrice = parseFloat(inputPrice)
-    let amountB = parseFloat(document.getElementById(idAmount).innerText)
-    let newPrice = parseFloat(document.getElementById(idPrice).innerText)
+    let amountB = parseFloat(document.getElementById(amount).innerText)
+    let newPrice = parseFloat(document.getElementById(sumPrice).innerText)
+    let newPriceTotal = parseFloat(document.getElementById(totalAmount).innerText)
 
     if (operator === '+') {
         amountB++
         newPrice += itemPrice
+        newPriceTotal += itemPrice
     }
     if (operator === '-' && amountB > 0) {
         amountB--
         newPrice -= itemPrice
+        newPriceTotal -= itemPrice
     }
-    document.getElementById(idAmount).innerText = amountB
-    // document.getElementById(id).innerText = amount3
-    document.getElementById(idPrice).innerText = newPrice
+    document.getElementById(amount).innerText = amountB
+    document.getElementById(sumPrice).innerText = newPrice
+    document.getElementById(totalAmount).innerText = newPriceTotal
     
 }
