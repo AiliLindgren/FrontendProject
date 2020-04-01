@@ -14,10 +14,10 @@ function changeAmount(operator) {
 let red = false;
 function changePicture() {
     if (!red){
-        document.getElementById("sBox").style.backgroundColor = "red" 
+        document.getElementById("heart").src = "HeartFull.jpg"
         red = true;
     }else{
-        document.getElementById("sBox").style.backgroundColor = "white" 
+        document.getElementById("heart").src = "Heart.jpg"
         red = false;
     }
 }
