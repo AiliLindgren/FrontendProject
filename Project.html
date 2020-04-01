@@ -24,7 +24,7 @@
             <img src="Spagetti.jpeg">
             <br>
             <button class="btn-ninja" onclick="changeAmount('-')">-</button>
-            <div id="amount">0</div> 
+            <div id="amount">0</div>
             <button class="btn-ninja" onclick="changeAmount('+')">+</button>
         </div>
     </div>
@@ -33,46 +33,46 @@
     <h1 class="divider">Groceries 2</h1>
     <br>
     <!-- // Här jobbar Aili -->
-    <div class="row">
-        <img src="Ketchup.jpg">
-        <div>Ketchup:</div>
-        <div id="ketchupPrice">25</div>
-        <div>kr</div>
-        <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup','totalAmount')">-</button>
-        <div id="amount2">0</div>
-        <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup', 'totalAmount')">+</button>
-        <span id="sumPriceKetchup">0 </span> <span>kr</span>
+    <div class="box">
+        <!-- <div class="row2"> -->
+            <span class="small-image"><img src="Ketchup.jpg"></span>
+            <span>Ketchup:</span>
+            <span id="ketchupPrice">25</span>
+            <span>kr</span>
+            <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup','totalAmount')">-</button>
+            <span id="amount2">0</span>
+            <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup', 'totalAmount')">+</button>
+            <span id="sumPriceKetchup">0 </span> <span>kr</span>
+        <!-- </div> -->
+        <br>
+        <div>
+            <img class="small-image" src="Lambi.jpg">
+            <span>Toalettpapper Lambi:</span>
+            <span id="lambiPrice">30</span>
+            <span>kr</span>
+            <button onclick="changeAmount2('-', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">-</button>
+            <span id="amount3">0</span>
+            <button onclick="changeAmount2('+', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">+</button>
+            <span id="sumPriceLambi">0 </span> <span>kr</span>
+        </div>
+        <br>
+        <div>
+            <img class="small-image" src="Soap.jpg">
+            <span>Soap:</span>
+            <span id="soapPrice">39</span>
+            <span>kr</span>
+            <button onclick="changeAmount2('-', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">-</button>
+            <span id="amount4">0</span>
+            <button onclick="changeAmount2('+', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">+</button>
+            <span id="sumPriceSoap">0</span> <span>kr</span>
+        </div>
+        <br>
+            <span>Total amount to pay:</span>
+            <span id="totalAmount">0</span>
+            <span>kr</span>
     </div>
-    <br>
-    <div class="row">
-        <img src="Lambi.jpg">
-        <div>Toalettpapper Lambi:</div>
-        <div id="lambiPrice">30</div>
-        <div>kr</div>
-        <button onclick="changeAmount2('-', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">-</button>
-        <div id="amount3">0</div>
-        <button onclick="changeAmount2('+', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">+</button>
-        <span id="sumPriceLambi">0 </span> <span>kr</span>
-    </div>
-    <br>
-    <div class="row">
-        <img src="Soap.jpg">
-        <div>Soap:</div>
-        <div id="soapPrice">39</div>
-        <div>kr</div>
-        <button onclick="changeAmount2('-', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">-</button>
-        <div id="amount4">0</div>
-        <button onclick="changeAmount2('+', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">+</button>
-        <span id="sumPriceSoap">0</span> <span>kr</span>
-    </div>
-    <br>
-    <div class="row">
-        <div>Total amount to pay:</div>
-        <div id="totalAmount">0</div>
-        <div>kr</div>
-    </div>
-
-    <h1 class="divider">Next </h1>
+        
+        <h1 class="divider">Next </h1>
 
 
 

@@ -44,7 +44,18 @@
     margin-bottom: 10px;
 }
 
-.plus{
-    text-align: center;
-    font-size: 60;
+.small-image{
+    margin: 0px 0px 0px;    
+    width: 100px;
+    height: 100px;
+}
+
+.small-image img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.row2{
+    display: inline-block;
+    width: 20px;
 }
