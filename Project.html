@@ -50,29 +50,41 @@
     <!-- // Här jobbar Aili -->
     <div class="row">
         <img src="Ketchup.jpg">
-        <div>Ketchup:</div> <div id="ketchupPrice">25</div> <div>kr</div>
-        <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup')">-</button>
+        <div>Ketchup:</div>
+        <div id="ketchupPrice">25</div>
+        <div>kr</div>
+        <button onclick="changeAmount2('-', '25', 'amount2', 'sumPriceKetchup','totalAmount')">-</button>
         <div id="amount2">0</div>
-        <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup')">+</button>
+        <button onclick="changeAmount2('+', '25', 'amount2', 'sumPriceKetchup', 'totalAmount')">+</button>
         <span id="sumPriceKetchup">0 </span> <span>kr</span>
     </div>
     <br>
     <div class="row">
         <img src="Lambi.jpg">
-        <div>Toalettpapper Lambi:</div> <div id="lambiPrice">30</div> <div>kr</div>
-        <button onclick="changeAmount2('-', '30', 'amount3', 'sumPriceLambi')">-</button>
+        <div>Toalettpapper Lambi:</div>
+        <div id="lambiPrice">30</div>
+        <div>kr</div>
+        <button onclick="changeAmount2('-', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">-</button>
         <div id="amount3">0</div>
-        <button onclick="changeAmount2('+', '30', 'amount3', 'sumPriceLambi')">+</button>
+        <button onclick="changeAmount2('+', '30', 'amount3', 'sumPriceLambi', 'totalAmount')">+</button>
         <span id="sumPriceLambi">0 </span> <span>kr</span>
     </div>
     <br>
     <div class="row">
         <img src="Soap.jpg">
-        <div>Soap:</div> <div id="soapPrice">39</div> <div>kr</div>
-        <button onclick="changeAmount2('-', '39', 'amount4', 'sumPriceSoap')">-</button>
+        <div>Soap:</div>
+        <div id="soapPrice">39</div>
+        <div>kr</div>
+        <button onclick="changeAmount2('-', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">-</button>
         <div id="amount4">0</div>
-        <button onclick="changeAmount2('+', '39', 'amount4', 'sumPriceSoap')">+</button>
+        <button onclick="changeAmount2('+', '39', 'amount4', 'sumPriceSoap', 'totalAmount')">+</button>
         <span id="sumPriceSoap">0</span> <span>kr</span>
+    </div>
+    <br>
+    <div class="row">
+        <div>Total amount to pay:</div>
+        <div id="totalAmount">0</div>
+        <div>kr</div>
     </div>
 
     <h1 class="divider">Next </h1>
