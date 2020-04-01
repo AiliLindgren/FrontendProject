@@ -41,16 +41,38 @@
             <div id="amount">0</div> 
             <button class="btn-ninja" onclick="changeAmount('+')">+</button>
         </div>
-    
-        <!-- Här ska en div ligga -->
-        <!-- Inuti div:en ska två bilder på ett hjärta ligga -->
-
     </div>
 
 
     <h1 class="divider">Groceries 2</h1>
     <br>
     <!-- // Här jobbar Aili -->
+    <div class="row">
+        <img src="Ketchup.jpg">
+        <div>Ketchup:</div> <div id="ketchupPrice">25</div> <div>kr</div>
+        <button onclick="changeAmount2('-', '25', 'amount2', 'priceKetchup')">-</button>
+        <div id="amount2">0</div>
+        <button onclick="changeAmount2('+', '25', 'amount2', 'priceKetchup')">+</button>
+        <span id="priceKetchup">0 </span> <span>kr</span>
+    </div>
+    <br>
+    <div class="row">
+        <img src="Lambi.jpg">
+        <div>Toalettpapper Lambi:</div> <div id="lambiPrice">30</div> <div>kr</div>
+        <button onclick="changeAmount2('-', '30', 'amount3', 'priceLambi')">-</button>
+        <div id="amount3">0</div>
+        <button onclick="changeAmount2('+', '30', 'amount3', 'priceLambi')">+</button>
+        <span id="priceLambi">0 </span> <span>kr</span>
+    </div>
+    <br>
+    <div class="row">
+        <img src="Soap.jpg">
+        <div>Soap:</div> <div id="soapPrice">39</div> <div>kr</div>
+        <button onclick="changeAmount2('-', '39', 'amount4', 'priceSoap')">-</button>
+        <div id="amount4">0</div>
+        <button onclick="changeAmount2('+', '39', 'amount4', 'priceSoap')">+</button>
+        <span id="priceSoap">0</span> <span>kr</span>
+    </div>
 
     <h1 class="divider">Next </h1>
 
