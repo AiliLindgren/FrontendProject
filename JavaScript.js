@@ -7,7 +7,6 @@ function changeAmount(operator) {
     if (operator === '+') {
         amount++
     }
-
     document.getElementById("amount").innerText = amount // Fråga Oscar om innerText.
 }
 
